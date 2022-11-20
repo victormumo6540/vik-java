@@ -1,0 +1,37 @@
+  package average;
+    //importing scanner class
+    import java.util.Scanner;
+
+public class Average {
+	 //method with no return type but has parameter
+    public static void threeUnits() {
+        //creating object of the scanner class
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter marks of three units");
+        System.out.println("Java Programming");
+        int marks1 = input.nextInt();
+        System.out.println(" ");
+
+        System.out.println("Networking");
+        int marks2 = input.nextInt();
+        System.out.println(" ");
+
+        System.out.println("Maths");
+        int marks3 = input.nextInt();
+        System.out.println(" ");
+
+        int average = (marks1 + marks2 + marks3)/3;
+        System.out.println(" ");
+
+        System.out.println("Marks for Java Programming is: " + marks1);
+        System.out.println("Marks for Networking is: " + marks2);
+        System.out.println("Marks for Maths is: " + marks3);
+        System.out.println("The Average is: " + average);
+    }
+
+    public static void main(String[] args) {
+        threeUnits();
+    }
+}
+    
